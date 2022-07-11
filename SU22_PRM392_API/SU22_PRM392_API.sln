@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SU22_PRM392_API", "SU22_PRM392_API\SU22_PRM392_API.csproj", "{7CE50B5B-E74A-4C8C-A7C9-F355A9DD315B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CE50B5B-E74A-4C8C-A7C9-F355A9DD315B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE50B5B-E74A-4C8C-A7C9-F355A9DD315B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE50B5B-E74A-4C8C-A7C9-F355A9DD315B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE50B5B-E74A-4C8C-A7C9-F355A9DD315B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25AD4A90-0E15-4946-91E2-6DD4AA6C7990}
+	EndGlobalSection
+EndGlobal

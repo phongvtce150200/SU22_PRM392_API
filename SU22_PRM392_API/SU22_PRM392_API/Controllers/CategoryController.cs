@@ -42,6 +42,19 @@ namespace SU22_PRM392_API.Controllers
             return category;
         }
 
+        [HttpGet("GetByName")]
+        public async Task<ActionResult<Category>> GetCategoryByName(string Name)
+        {
+            var category = await _context.categories.FirstOrDefaultAsync(x => x.CategoryName == Name);
+
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            return category;
+        }
+
         // PUT: api/Category/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

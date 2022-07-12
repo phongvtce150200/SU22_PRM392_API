@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using SU22_PRM392_API.Database;
 using SU22_PRM392_API.Models;
 
@@ -26,6 +27,25 @@ namespace SU22_PRM392_API.Controllers
         public async Task<ActionResult<IEnumerable<Product>>> Getproducts()
         {
             return await _context.products.ToListAsync();
+        }
+
+
+        [HttpGet("categoryName")]
+        public IActionResult GetProductbyCategory(string categoryName)
+        {
+            var getCategory = _context.categories.FirstOrDefault(c => c.CategoryName == categoryName);
+            if(getCategory == null) return NotFound(new { Response = "Category doesn't exists"});
+
+            var product = _context.products.Where(x => x.CategoryId == getCategory.CategoryId).ToList();
+            if(product == null) return NotFound(new { Response = "Category doesn't have product" });
+
+
+            /*JsonSerializerSettings jss = new JsonSerializerSettings();
+            jss.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+            string json = JsonConvert.SerializeObject(product,jss);*/
+
+            //return Ok(json) ;
+            return Ok(product);
         }
 
         // GET: api/Products/5
@@ -55,8 +75,8 @@ namespace SU22_PRM392_API.Controllers
             }
             else
             {
-               /* var checkDuplicate = _context.products.FirstOrDefault(x => x.ProductName == product.ProductName);
-                if (checkDuplicate != null) return BadRequest(new { respone = "Category is already exists" });*/
+                /* var checkDuplicate = _context.products.FirstOrDefault(x => x.ProductName == product.ProductName);
+                 if (checkDuplicate != null) return BadRequest(new { respone = "Category is already exists" });*/
                 EditProduct.ProductName = product.ProductName;
                 EditProduct.Description = product.Description;
                 EditProduct.Price = product.Price;

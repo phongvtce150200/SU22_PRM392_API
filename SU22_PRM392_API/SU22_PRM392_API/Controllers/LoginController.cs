@@ -25,7 +25,7 @@ namespace SU22_PRM392_API.Controllers
 
             bool isAdmin = check.IsAdmin;
 
-            return Ok(new { Response = "Login Successfully!\n" + "isAdmin = " + isAdmin});
+            return Ok(new { Response = "Login Successfully!" + isAdmin});
         }
     }
 }

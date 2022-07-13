@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -34,18 +36,20 @@ namespace SU22_PRM392_API.Controllers
         public IActionResult GetProductbyCategory(string categoryName)
         {
             var getCategory = _context.categories.FirstOrDefault(c => c.CategoryName == categoryName);
-            if(getCategory == null) return NotFound(new { Response = "Category doesn't exists"});
+            if (getCategory == null) return NotFound(new { Response = "Category doesn't exists" });
 
             var product = _context.products.Where(x => x.CategoryId == getCategory.CategoryId).ToList();
-            if(product == null) return NotFound(new { Response = "Category doesn't have product" });
+            if (product == null) return NotFound(new { Response = "Category doesn't have product" });
 
 
-            /*JsonSerializerSettings jss = new JsonSerializerSettings();
+            JsonSerializerSettings jss = new JsonSerializerSettings();
             jss.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
-            string json = JsonConvert.SerializeObject(product,jss);*/
+            string json = JsonConvert.SerializeObject(product, jss);
+
+            return Content(json, "application/json");
 
             //return Ok(json) ;
-            return Ok(product);
+            //return Ok(product);
         }
 
         // GET: api/Products/5
@@ -71,7 +75,7 @@ namespace SU22_PRM392_API.Controllers
 
             if (EditProduct == null)
             {
-                return BadRequest();
+                return BadRequest(new {Response = "Category with Id = " +id+ "not found"});
             }
             else
             {

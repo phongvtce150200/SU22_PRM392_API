@@ -37,8 +37,9 @@ namespace SU22_PRM392_API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SU22_PRM392_API", Version = "v1" });
             });
-            services.AddControllers().AddJsonOptions(x =>
-             x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+            /*services.AddControllers().AddJsonOptions(x =>
+             x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);*/
+            /*services.AddControllers(config => config.Filters.Add(new ProducesAttribute("application/json")));*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

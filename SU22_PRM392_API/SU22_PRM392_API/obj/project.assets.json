@@ -7570,11 +7570,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vthan\\Desktop\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj",
+      "projectUniqueName": "G:\\PRN221\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj",
       "projectName": "SU22_PRM392_API",
-      "projectPath": "C:\\Users\\vthan\\Desktop\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj",
+      "projectPath": "G:\\PRN221\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj",
       "packagesPath": "C:\\Users\\vthan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vthan\\Desktop\\SU22_PRM392_API\\SU22_PRM392_API\\obj\\",
+      "outputPath": "G:\\PRN221\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vthan\\AppData\\Roaming\\NuGet\\NuGet.Config",

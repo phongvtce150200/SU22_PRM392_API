@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\PRN221\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj": {}
+    "C:\\Users\\vthan\\Downloads\\SU22_PRM392_API-main_Update_Cart_V2.0_Ban_moi_nhat\\SU22_PRM392_API-main\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj": {}
   },
   "projects": {
-    "G:\\PRN221\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj": {
+    "C:\\Users\\vthan\\Downloads\\SU22_PRM392_API-main_Update_Cart_V2.0_Ban_moi_nhat\\SU22_PRM392_API-main\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\PRN221\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj",
+        "projectUniqueName": "C:\\Users\\vthan\\Downloads\\SU22_PRM392_API-main_Update_Cart_V2.0_Ban_moi_nhat\\SU22_PRM392_API-main\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj",
         "projectName": "SU22_PRM392_API",
-        "projectPath": "G:\\PRN221\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj",
+        "projectPath": "C:\\Users\\vthan\\Downloads\\SU22_PRM392_API-main_Update_Cart_V2.0_Ban_moi_nhat\\SU22_PRM392_API-main\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj",
         "packagesPath": "C:\\Users\\vthan\\.nuget\\packages\\",
-        "outputPath": "G:\\PRN221\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API\\obj\\",
+        "outputPath": "C:\\Users\\vthan\\Downloads\\SU22_PRM392_API-main_Update_Cart_V2.0_Ban_moi_nhat\\SU22_PRM392_API-main\\SU22_PRM392_API\\SU22_PRM392_API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vthan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

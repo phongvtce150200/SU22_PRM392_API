@@ -10,6 +10,7 @@ namespace SU22_PRM392_API.Models
         [Key]
         public int CartId { get; set; }
         public int ProductId { get; set; }
+        public int Quantity { get; set; }
         [ForeignKey("CartId")]
         public virtual Cart Cart { get; set; }
         [ForeignKey("ProductId")]

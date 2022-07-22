@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oLBJgmMlQdKdthOtx0C/J+o5EEDSmhJkrXb57rj43Cki8pSpr1FefYaOKMyhCGKd/u2hAsLmQm/KNybpYy4XMQ==",
+  "dgSpecHash": "sRze/lnzDNlpPYwBSUVuXjof1ZlCChrbIj8ItXoxL9JhiHye5ngG4yrB5IVoTV2RykvWqhLcSCo28HNxy2LLtQ==",
   "success": true,
-  "projectFilePath": "G:\\PRN221\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj",
+  "projectFilePath": "C:\\Users\\vthan\\Downloads\\SU22_PRM392_API-main_Update_Cart_V2.0_Ban_moi_nhat\\SU22_PRM392_API-main\\SU22_PRM392_API\\SU22_PRM392_API\\SU22_PRM392_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vthan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\vthan\\.nuget\\packages\\mailkit\\3.3.0\\mailkit.3.3.0.nupkg.sha512",

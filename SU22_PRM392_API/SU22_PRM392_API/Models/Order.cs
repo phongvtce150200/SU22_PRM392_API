@@ -13,12 +13,9 @@ namespace SU22_PRM392_API.Models
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
         public DateTime ShippedDate { get; set; } = DateTime.UtcNow;
-        public float Voucher { get; set; }
         [Column(TypeName = "Money")]
         public decimal Freight { get; set; }
         public string ShipAddress { get; set; }
-        [Column(TypeName = "Money")]
-        public decimal TotalPrice { get; set; }
         public bool OrderStatus { get; set; }
         [ForeignKey("Id")]
         public User User { get; set; }

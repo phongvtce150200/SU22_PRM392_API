@@ -11,7 +11,8 @@ namespace SU22_PRM392_API.Models
         [Key]
         public int ProductId { get; set; }
         public int Quantity { get; set; }
-
+        [Column(TypeName = "Money")]
+        public decimal TotalPrice { get; set; }
         [ForeignKey("OrderId")]
         public Order Order { get; set; }
         [ForeignKey("ProductId")]

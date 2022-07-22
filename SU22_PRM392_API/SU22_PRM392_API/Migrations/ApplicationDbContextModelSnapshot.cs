@@ -50,6 +50,9 @@ namespace SU22_PRM392_API.Migrations
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
                     b.HasKey("CartId", "ProductId");
 
                     b.HasIndex("ProductId");
@@ -103,12 +106,6 @@ namespace SU22_PRM392_API.Migrations
                     b.Property<DateTime>("ShippedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("Money");
-
-                    b.Property<float>("Voucher")
-                        .HasColumnType("real");
-
                     b.HasKey("OrderId");
 
                     b.HasIndex("Id");
@@ -126,6 +123,9 @@ namespace SU22_PRM392_API.Migrations
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("Money");
 
                     b.HasKey("OrderId", "ProductId");
 
